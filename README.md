@@ -19,4 +19,5 @@ This shall result in the sample connector being ready to use in Anypoint Studio
 * Click trough the import wizard
 
 <br/>
+
 ![alt text](/images/Studio.png "Project in Studio")

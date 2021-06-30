@@ -1,0 +1,32 @@
+{
+  "extensionModelLoaderDescriptor": {
+    "id": "java",
+    "attributes": {
+      "type": "com.mulesoft.connectors.sample.internal.extension.SampleConnector",
+      "version": "1.0.4-SNAPSHOT"
+    }
+  },
+  "license": {
+    "allowsEvaluation": true
+  },
+  "name": "Solace Sample Connector",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "privilegedExportedPackages": [],
+      "privilegedArtifactIds": [],
+      "exportedPackages": [
+        "com.mulesoft.connectivity.rest.commons.api.request",
+        "com.mulesoft.connectivity.rest.commons.api.configuration",
+        "com.mulesoft.connectivity.rest.commons.api.proxy"
+      ],
+      "exportedResources": []
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  },
+  "minMuleVersion": "4.3.0"
+}

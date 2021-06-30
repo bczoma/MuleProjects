@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:sample="http://www.mulesoft.org/schema/mule/sample" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/sample http://www.mulesoft.org/schema/mule/sample/current/mule-sample.xsd">
+    <sample:config name="Solace_Sample_Connector_Config" doc:name="Solace Sample Connector Config" doc:id="e236c925-2914-4f3f-aedf-0748578bb5d9" >
+        <sample:unsecured-connection />
+    </sample:config>
+    <flow name="sampleprojectFlow" doc:id="f985a438-7b7a-41de-b206-fdcab001aeb4" >
+        <sample:sample-operation doc:name="Sample operation" doc:id="d66231fc-3383-4534-bae7-5da1e4462763" />
+    </flow>
+    <flow name="sampleprojectFlow1" doc:id="660e1ed2-f063-4738-ba75-170a5dba50b6" >
+        <sample:sample-source service="" action="" doc:name="Sample source" doc:id="e7ce721d-c8c5-4414-a339-84381aa06a5d" />
+    </flow>
+</mule>

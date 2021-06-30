@@ -1,0 +1,16 @@
+#% Rest Connector Descriptor 1.0
+
+apiSpec:
+  url: /home/ubuntu/workspace/restapi/patients.raml
+
+connectorName: Patients
+connectorDescription: This API is used for simulating patient related work.
+
+connectorGav:
+  groupId: com.mulesoft.connectors
+  artifactId: patients-api
+  version: 1.0.0-SNAPSHOT
+
+baseUri:
+  value: 'https://anypoint.mulesoft.com/mocking/api/v1/links/39824b58-e59a-4944-9a9c-8570db98ccdd/'
+  type: parameter

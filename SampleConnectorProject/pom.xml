@@ -16,7 +16,7 @@
 
     <groupId>com.mulesoft.connectors</groupId>
     <artifactId>sample-api</artifactId>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0.5-SNAPSHOT</version>
 
     <properties>
         <mule.version>4.2.1</mule.version>

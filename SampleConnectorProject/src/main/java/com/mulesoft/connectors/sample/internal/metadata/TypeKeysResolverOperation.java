@@ -10,11 +10,11 @@ import org.mule.runtime.api.metadata.MetadataKeyBuilder;
 import org.mule.runtime.api.metadata.MetadataResolvingException;
 import org.mule.runtime.api.metadata.resolving.TypeKeysResolver;
 
-public class OperationTypeKeysResolver implements TypeKeysResolver {
+public class TypeKeysResolverOperation implements TypeKeysResolver {
 
 	@Override
 	public String getCategoryName() {
-		return "test";
+		return "Operation";
 	}
 
 	@Override

@@ -10,11 +10,11 @@ import org.mule.runtime.api.metadata.MetadataContext;
 
 import com.mulesoft.connectors.sample.api.ActionIdentifier;
 
-public class OutputOperationTypeResolver implements OutputTypeResolver<ActionIdentifier>{
+public class OutputTypeResolverSource implements OutputTypeResolver<ActionIdentifier>{
 
 	@Override
 	public String getCategoryName() {
-		return "test";
+		return "Source";
 	}
 
 	@Override

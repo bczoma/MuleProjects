@@ -233,7 +233,7 @@
         <repository>
             <id>mule-releases</id>
             <name>Nexus Public Releases</name>
-            <url>https://repository.mulesoft.org/nexus/content/repositories/releases-ee/</url>
+            <url>https://repository.mulesoft.org/nexus/content/repositories/releases/</url>
         </repository>
     </repositories>
 

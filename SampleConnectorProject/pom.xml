@@ -9,7 +9,7 @@
    <name>Sample Connector</name>
    <groupId>com.mulesoft.connectors</groupId>
    <artifactId>sample-api</artifactId>
-   <version>1.0.18-SNAPSHOT</version>
+   <version>1.0.19-SNAPSHOT</version>
 
    <parent>
        <groupId>org.mule.extensions</groupId>

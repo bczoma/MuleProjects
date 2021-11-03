@@ -7,10 +7,11 @@ http://www.mulesoft.org/schema/mule/xml-module http://www.mulesoft.org/schema/mu
 http://www.mulesoft.org/schema/mule/sample http://www.mulesoft.org/schema/mule/sample/current/mule-sample.xsd">
 	<sample:config name="Solace_Sample_Connector_Config" doc:name="Solace Sample Connector Config" doc:id="c881ca2b-7d59-4637-9df8-7a2bac654ec5" />
 	<sample:config name="Solace_Sample_Connector_Config1" doc:name="Solace Sample Connector Config" doc:id="1959bf16-b9c0-4a86-8aac-6ab77b6c2cee" />
-	<flow name="sampleprojectFlow" doc:id="10d2ada0-2979-4a09-9a4b-3bb0a6ab7ae9" >
-		<sample:sample-operation1 service="Service2" action="Service2-Service2Action1" doc:name="Sample operation 1" doc:id="1da06e47-62fb-45c6-afc5-ec84a6722c51" />
+	<sample:config name="Solace_Sample_Connector_Config2" doc:name="Solace Sample Connector Config" doc:id="701251af-eaf3-4f5a-b234-699393776bb3" />
+	<flow name="sampleprojectFlow" doc:id="5ee89d2c-9176-44bd-9696-0dde03e22b58" >
+		<sample:partial-fetching-works-operation service="Service1" action="Service1-Service1Action1" doc:name="Partial fetching works operation" doc:id="f590417b-ff1f-49fd-95e1-1e452a2de6d5" />
 	</flow>
-	<flow name="sampleprojectFlow1" doc:id="edece819-795e-4662-b4fa-bc597ed069e8" >
-		<sample:sample-operation2 doc:name="Sample operation 2" doc:id="5fdee473-549b-43f6-bd3c-5222f60bacba" config-ref="Solace_Sample_Connector_Config1"/>
+	<flow name="sampleprojectFlow1" doc:id="dce69208-b2ce-4343-8074-c67b8feeb019" >
+		<sample:partial-fetching-does-not-work-operation service="Service2" doc:name="Partial fetching does not work operation" doc:id="3554d4fe-f4ca-4058-b211-acf18e72600b" config-ref="Solace_Sample_Connector_Config2"/>
 	</flow>
 </mule>

@@ -11,7 +11,7 @@
   <artifactId>sample-api</artifactId>
   <packaging>mule-extension</packaging>
   <name>Sample Connector</name>
-  <version>1.0.4-SNAPSHOT</version>
+  <version>1.0.19-SNAPSHOT</version>
   <description>This API is used for simulating patient related work.</description>
   <build>
     <plugins>
@@ -150,7 +150,7 @@
     <repository>
       <id>mule-releases</id>
       <name>Nexus Public Releases</name>
-      <url>https://repository.mulesoft.org/nexus/content/repositories/releases-ee/</url>
+      <url>https://repository.mulesoft.org/nexus/content/repositories/releases/</url>
     </repository>
   </repositories>
   <dependencies>
@@ -159,12 +159,6 @@
       <artifactId>json</artifactId>
       <version>20200518</version>
       <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.mule.sdk</groupId>
-      <artifactId>mule-sdk-api</artifactId>
-      <version>0.2.0</version>
-      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.mule.module</groupId>

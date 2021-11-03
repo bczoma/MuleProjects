@@ -23,7 +23,7 @@ public class SampleOperations {
 
   @OutputResolver(output = OutputTypeResolverOperationWithPartialFetch.class)
   @MediaType(value = ANY, strict = false)
-  public Object sampleOperation1( 
+  public Object sampleOperation1( /* NO @Config SampleConfiguration configuration, */
       @ParameterGroup(name = "MetadataKey") @MetadataKeyId(TypeKeysResolverOperationWithPartialFetch.class) ActionIdentifier identifier,
       @Content(primary = true) @TypeResolver(InputTypeResolverOperationWithPartialFetch.class) TypedValue<Object> otherArg){
     return null;

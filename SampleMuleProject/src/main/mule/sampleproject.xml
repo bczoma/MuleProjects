@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:sample="http://www.mulesoft.org/schema/mule/sample" xmlns="http://www.mulesoft.org/schema/mule/core"
-	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+<mule xmlns:sample="http://www.mulesoft.org/schema/mule/sample" xmlns:xml-module="http://www.mulesoft.org/schema/mule/xml-module"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/xml-module http://www.mulesoft.org/schema/mule/xml-module/current/mule-xml-module.xsd
 http://www.mulesoft.org/schema/mule/sample http://www.mulesoft.org/schema/mule/sample/current/mule-sample.xsd">
-    <sample:config name="Solace_Sample_Connector_Config" doc:name="Solace Sample Connector Config" doc:id="e236c925-2914-4f3f-aedf-0748578bb5d9" >
-        <sample:unsecured-connection />
-    </sample:config>
-    <flow name="sampleprojectFlow" doc:id="f985a438-7b7a-41de-b206-fdcab001aeb4" >
-        <sample:sample-operation doc:name="Sample operation" doc:id="d66231fc-3383-4534-bae7-5da1e4462763" />
-    </flow>
-    <flow name="sampleprojectFlow1" doc:id="660e1ed2-f063-4738-ba75-170a5dba50b6" >
-        <sample:sample-source service="" action="" doc:name="Sample source" doc:id="e7ce721d-c8c5-4414-a339-84381aa06a5d" />
-    </flow>
+	<sample:config name="Solace_Sample_Connector_Config" doc:name="Solace Sample Connector Config" doc:id="c881ca2b-7d59-4637-9df8-7a2bac654ec5" />
+	<sample:config name="Solace_Sample_Connector_Config1" doc:name="Solace Sample Connector Config" doc:id="1959bf16-b9c0-4a86-8aac-6ab77b6c2cee" />
+	<flow name="sampleprojectFlow" doc:id="10d2ada0-2979-4a09-9a4b-3bb0a6ab7ae9" >
+		<sample:sample-operation1 service="Service2" action="Service2-Service2Action1" doc:name="Sample operation 1" doc:id="1da06e47-62fb-45c6-afc5-ec84a6722c51" />
+	</flow>
+	<flow name="sampleprojectFlow1" doc:id="edece819-795e-4662-b4fa-bc597ed069e8" >
+		<sample:sample-operation2 doc:name="Sample operation 2" doc:id="5fdee473-549b-43f6-bd3c-5222f60bacba" config-ref="Solace_Sample_Connector_Config1"/>
+	</flow>
 </mule>

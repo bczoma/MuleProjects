@@ -21,10 +21,11 @@ import com.mulesoft.connectors.sample.internal.metadata.TypeKeysResolverOperatio
 
 public class SampleOperations {
 
-  @OutputResolver(output = OutputTypeResolverOperation.class)
+  @OutputResolver(output = OutputTypeResolverOperationWithPartialFetch.class)
   @MediaType(value = ANY, strict = false)
-  public Object sampleOperation( @ParameterGroup(name = "MetadataKey") @MetadataKeyId(TypeKeysResolverOperation.class) ActionIdentifier identifier,
-                        String otherArg){
+  public Object sampleOperation1( 
+      @ParameterGroup(name = "MetadataKey") @MetadataKeyId(TypeKeysResolverOperationWithPartialFetch.class) ActionIdentifier identifier,
+      @Content(primary = true) @TypeResolver(InputTypeResolverOperationWithPartialFetch.class) TypedValue<Object> otherArg){
     return null;
   }
   
